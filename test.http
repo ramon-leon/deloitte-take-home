@@ -1,0 +1,34 @@
+### GET ONE ART RECORD
+
+GET http://localhost:3000/api/art/20830
+
+### GET LIST OF ARTS FILTER BY TYPE
+
+GET http://localhost:3000/api/art?pagesize=3&page=2
+
+#### ADD COMMENT TO AN ART RECORD
+
+POST http://localhost:3000/api/art/20830/comments
+Content-Type: application/json
+
+{
+  "userId": "888",
+  "name": "777",
+  "content": "777",
+  "artId": "20830"
+}
+
+### LIST ALL USERS
+
+GET http://localhost:3000/api/users
+
+### CREATE AN USER
+
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+  "name": "RAM",
+  "age": 25,
+  "location": "california"
+}
